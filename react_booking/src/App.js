@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import DemoGird from './TailwindComponent/DemoGird';
+import PaddingMarginDemo from './TailwindComponent/PaddingMarginDemo';
+import JoinDemo from './LoDash/JoinDemo';
+import LastFirstLoDash from './LoDash/LastFirstLoDash';
+import ChunkLoDash from './LoDash/ChunkLoDash';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <DemoGird /> */}
+      {/* <PaddingMarginDemo /> */}
+      {/* <JoinDemo /> */}
+      {/* <LastFirstLoDash /> */}
+      <ChunkLoDash />
     </div>
   );
 }

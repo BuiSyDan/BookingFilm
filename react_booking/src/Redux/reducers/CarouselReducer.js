@@ -7,7 +7,7 @@ const stateDefault = {
             "maPhim": 1282,
             "hinhAnh": "http://movieapi.cyberlearn.vn/hinhanh/ban-tay-diet-quy.png"
         }
-    ]
+    ],
 };
 
 

@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Carousel } from 'antd';
-
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux';
+import axios from 'axios';
+import { getCarouselAction } from '../../../../Redux/reducers/actions/CarouselActions';
 const contentStyle = {
-    height: '400px',
+    height: '500px',
     color: '#fff',
     lineHeight: '160px',
     textAlign: 'center',
@@ -17,6 +18,16 @@ const contentStyle = {
 export default function CarouselHome() {
     const { arrImg } = useSelector(state => state.CarouselReducer)
     console.log('arrImg', arrImg)
+    const dispatch = useDispatch();
+
+    //Se tu kich hoat khi component load ra
+    //1 action = {type: '', data}
+    //2 (Phai cao middleware)
+    //callBackFuncrion(dispatch)
+    useEffect(() => {
+        dispatch(getCarouselAction);
+
+    }, [])
 
 
 
